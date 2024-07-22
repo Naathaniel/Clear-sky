@@ -1,0 +1,100 @@
+* { margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; }
+
+
+.foot{
+    background-color: #4268AE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    /* border: solid 1px red; */
+    color: rgb(201, 201, 201);
+    animation: fadeInUp; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    justify-content: start;
+    /* border: solid 1px red; */
+}
+
+.talktousfoot{
+    font-size: 15px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 5px 30px;
+    color: #4268AE !important;
+    text-decoration: none;
+}
+
+.btfoot{
+    /* border: solid 1px red;  */
+    padding-top: 3%;
+}
+
+.foot2{
+    /* border: solid 1px yellow; */
+    height: 230px;
+    width: 100%;
+    margin: 5% 5% 2% 5%;
+    display: flex;
+    padding: 0 8%;
+}
+
+.foot2 h4{
+    color: white;
+}
+.foot2 strong{
+    color: rgb(201, 201, 201);
+}
+
+.footions{
+    /* border: solid 1px yellow; */
+    line-height: 92%;
+    padding-top: 1%;
+}
+
+.frow1{
+    /* border: solid 1px red; */
+    width: 82%;
+    align-items: center;
+    text-align: center;
+}
+.frow2{
+    /* border: solid 1px yellow; */
+    width: 82%;
+    align-items: center;
+    padding: 2%;
+    padding-left: 6%;
+}
+.frow3{
+    /* border: solid 1px green; */
+    width: 82%;
+    align-items: center;
+    padding: 2% 0;
+}
+
+
+.foot3{
+    border: solid 1px #4268AE;
+    background-color: #4268AE;
+    border-top: 1px solid rgb(201, 201, 201);
+    text-align: center;
+    padding-top: 1%;
+    color: rgb(201, 201, 201);
+}
+
+.footlink {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    /* border: solid 1px green; */
+}
+
+
+@media screen and (max-width: 950px){.foot{flex-direction: column; height: auto;}.ftlogo{height: 180px;}}
+@media screen and (max-width: 774px){.foot2{flex-direction: column; height: auto;}.frow2{padding: 0; width: 100%;}.frow1{ width: 100%;}}.frow3{ width: 100%;}

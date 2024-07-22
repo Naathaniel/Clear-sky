@@ -1,0 +1,298 @@
+* { margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;font-family: 'Poppins', sans-serif; }
+
+.maingrow {
+    background-color: #F8FCFE;
+    /* border: 1px solid pink; */
+    display: flex;
+    padding: 0 6%;
+}
+.leftgrow{
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    padding: 7% 0 3% 4%;
+    animation: fadeInLeft; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+.leftgrow h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #4268AE;
+}
+/* .leftgrow p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 0.783);
+    padding-bottom: 3%;
+}
+.leftgrow li{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(65, 65, 65);
+    
+}
+   */
+
+.rightgrow{
+    animation: fadeInRight; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 1650px){.leftgrow{padding: 5% 0 2% 2%;}}
+@media screen and (max-width: 1600px){.rgimg{height: 500px;}}
+@media screen and (max-width: 1430px){.rgimg{height: 480px;}.leftgrow h1{font-size: 30px;}.leftgrow p{font-size: 14px;}.leftgrow li{font-size: 14px;}}
+@media screen and (max-width: 1290px){.rgimg{height: 450px;}.leftgrow{padding: 3% 0 2% 2%;}}
+@media screen and (max-width: 1240px){.maingrow{flex-direction: column; padding: 3% 0 3% 3%;}.rightgrow{display: flex; justify-content: center;}.leftgrow{padding: 5% 0 2% 2%;}.leftgrow p{padding-bottom: 1px;}}
+@media screen and (max-width: 690px){.rgimg{height: 410px;}}
+@media screen and (max-width: 660px){.rgimg{height: 380px;}}
+@media screen and (max-width: 580px){.rgimg{height: 350px;}}
+@media screen and (max-width: 540px){.rgimg{height: 330px;}}
+@media screen and (max-width: 530px){.rgimg{height: 320px;}}
+@media screen and (max-width: 500px){.rgimg{display: none;}.leftgrow{padding: 5% 4% 4% 4%;}.maingrow{padding: 3% 2% 2% 2%;}}
+@media screen and (max-width: 540px){.leftgrow h1{font-size: 25px;}.leftgrow p{font-size: 13px;}.leftgrow li{font-size: 13px;}}
+
+.AARRRtitle{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    padding: 5% 12% 1% 12%;
+    animation: fadeInDown; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+/* .AARRRtitle h2{
+    font-size: 27px;
+    font-weight: 600;
+
+
+.AARRRtitle p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 4%;
+} }*/
+
+
+.AArrrcontent{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    padding: 2% 5% 8% 5%;
+    animation: fadeInUp; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+.aarrr{
+    /* border: 1px solid yellow; */
+    padding: 0;
+}
+
+/* .AR1{
+    border: solid 1px red;
+} */
+
+.AR2{
+    /* border: solid 1px yellow; */
+    padding: 2% 1% 2% 2%;
+}
+
+.paraAR{
+    font-size: 16px;
+    color: #686868;
+    font-weight: 600;
+}
+
+.hfiveorange{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4268AE;
+}
+
+.aarrr2{
+    /* border: 1px solid blue; */
+    padding: 6% 13% 9% 0;
+    color: #4268AE;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px){.AArrrcontent{flex-direction: column;}.AR1{text-align: center;}}
+@media screen and (max-width: 576px){.aarrr{height: 350px;}}
+@media screen and (max-width: 502px){.AArrrcontent{padding: 2% 2% 8% 2%;}}
+@media screen and (max-width: 474px){.aarrr{height: 300px;}}
+@media screen and (max-width: 410px){.aarrr{height: 250px;}}
+
+.hfive{
+    font-size: 19px;
+    font-weight: 600;
+    color: #424242;
+}
+  
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('/public/images/nerban.png');
+    background-size: cover;
+    background-position:  right center;
+    height: 34vh;
+    margin-bottom: 1%;
+    animation: fadeInUp; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+
+.bann1 h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #34C0FF;
+    padding-bottom: 4%;
+    /* border: 1px solid red; */
+}
+.bann1 p{
+    font-size: 16px;
+    color: white;
+    /* border: 1px solid violet; */
+}
+
+.banwhite{
+    color: white;
+    font-weight: 600;
+    /* border: 1px solid blue; */
+}
+
+.banbtn {
+    /* border: 1px solid blue; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 48%;
+    justify-content: end;
+}
+
+.btnban {
+    border-radius: 12px;
+    border-style: none;
+    background-color: #34C0FF;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 2% 5%;
+}
+
+.bannerdiv{
+    /* border: 1px solid  yellow; */
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px){.bannerdiv{width: 90%;}}
+@media screen and (max-width: 1069px){.bannerdiv{flex-direction: column;}.banbtn{width: 100% ;justify-content:start;}.btnban{padding: 9px 4%;}.bann1 h3{padding-bottom: 1px;}}
+@media screen and (max-width: 557px){.bann1 h3{font-size: 30px;}.bannerdiv{margin: 5% 0;}}
+@media screen and (max-width: 406px){.banner{height: 38vh;}}
+@media screen and (max-width: 367px){.bann1 h3{font-size: 25px;}.bann1 p{font-size: 14px;}}
+@media screen and (max-width: 291px){.banner{height: 38vh;}}
+
+
+.mainefficiency {
+    background-color: #F8FCFE;
+    /* border: 1px solid pink; */
+    display: flex;
+    padding: 0 8%;
+}
+.leftefficiency{
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0 4% 4%;
+    animation: fadeInLeft; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+.leftefficiency h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #4268AE;
+}
+.leftefficiency p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 0.783);
+    padding: 3% 10% 0 0 ;
+}
+
+.sec2eff{
+    padding: 4% 10% 5% 10%;
+    /* border: 1px solid red; */
+    animation: fadeIn; /* fadeInRight fadeInDown fadeInUp */
+    animation-duration: 1.5s;
+}
+.sec2eff h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(80, 80, 80);
+}
+.sec2eff p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+}
+.sec2eff ol{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+    line-height: 24px;
+}
+
+
+@media screen and (max-width: 800px){.sec2eff h4{font-size: 24px;}.sec2eff p{font-size: 15px;}}
+@media screen and (max-width: 650px){.sec2eff{padding: 4% 6% 5% 6%;}}
+@media screen and (max-width: 950px){.AARRRtitle{padding: 5% 4% 1% 4%;}}
+@media screen and (max-width: 500px){.AARRRtitle h2{font-size: 22px;} .AARRRtitle p{font-size: 14px;}}
+@media screen and (max-width: 430px){.leftefficiency h1{font-size: 28px;} .leftefficiency p{font-size: 15px;}}
+
+/* @media screen and (max-width: 1582px){.aarrr2{padding: 6% 8% 9% 0;}}
+@media screen and (max-width: 1484px){.aarrr2{padding: 6% 4% 9% 0;}}
+@media screen and (max-width: 1380px){.aarrr2{padding: 6% 0 9% 0;}}
+@media screen and (max-width: 1380px){.aarrr{height: 350px;}.aarrr2{font-size: 15px;}}
+@media screen and (max-width: 1087px){.aarrr{height: 280px;}}
+@media screen and (max-width: 1269px){.AArrrcontent{padding: 0 5% 5% 5%;}}
+@media screen and (max-width: 950px){.aarrr2{font-size: 14px;}}
+@media screen and (max-width: 900px){.AArrrcontent{flex-direction: column; text-align: center;}.aarrr2{padding: 2% 0 0 0;}.aarrr{height: 250px;}}
+@media screen and (max-width: 800px){.aarrr{height: 240px;}}
+@media screen and (max-width: 768px) {
+    .AArrrcontent {
+      background-image: url('/public/images/armobile.png');
+      background-size: contain; 
+      background-repeat: no-repeat;
+      height: 600px; 
+      margin: 0 3%;
+    }
+      .aarrr {
+    display: none;
+  }
+}
+@media screen and (max-width: 542px){.AArrrcontent{padding: 0 2% 5% 2%;}}
+@media screen and (max-width: 611px){.AArrrcontent{height: 400px;}}
+@media screen and (max-width: 488px){.AArrrcontent{height: 370px;}}
+@media screen and (max-width: 474px){.aarrr2{font-size: 13px;}}
+@media screen and (max-width: 454px){.aarrr2{font-size: 13px;}}
+@media screen and (max-width: 400px){.aarrr2{font-size: 13px;}}
+@media screen and (max-width: 338px){.aarrr2{font-size: 13px;}}  */
+
+
+
+
+.MIbg1{
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    padding-top: 12px;
+}
+
+.MIbg1 p{
+    font-size: 17px;
+}
+
+.miCS{
+    color: #4268AE;
+}
