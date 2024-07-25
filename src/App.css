@@ -112,7 +112,9 @@ body {
 @media screen and (max-width: 630px){.sampsubt {font-weight: 500; font-size: 35px;}.samppara{font-size: 14px;}.conthero{padding: 15%  5% 0 2%;}}
 /* @media screen and (max-width: 510px){.imgcont{height: 150px;}} */
 @media screen and (max-width: 450px){.samppara{padding-right: 20%;}.conthero{padding: 15%  5% 0 4%;}}
-@media screen and (max-width: 450px){.samppara{padding-right: 20%;}.conthero{padding: 15%  5% 0 4%;}}
+@media screen and (max-width: 450px){.samppara{padding-right: 20%;}.conthero{padding: 15%  5% 0 4%;}.fsMain{background-position: 40% 60%}}
+@media screen and (max-width: 375px){.contlogo{height: 350px;}.imgcont{height: 196px;}}
+@media screen and (max-width: 360px){.contlogo{height: 345px;}.imgcont{height: 181px;}}
 
 
 .bodymarg{
@@ -414,6 +416,47 @@ body {
   text-decoration: none;
 }
 
+.learnMorebtn1{
+  background-color: #4268AE;
+  padding: 4px 12px;
+  border-radius: 1px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.learnMorebtn2{
+  background-color: #FFA437;
+  padding: 4px 12px;
+  border-radius: 1px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.learnMorebtn3{
+  background-color: #4268AE;
+  padding: 4px 12px;
+  border-radius: 1px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.learnMorebtn4{
+  background-color: #FFA437;
+  padding: 4px 12px;
+  border-radius: 1px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.learnMorebtn5{
+  background-color: #4268AE;
+  padding: 4px 12px;
+  border-radius: 1px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
 .prcB{
   /* border: 1px solid red; */
   padding: 1% 10%;
@@ -494,46 +537,6 @@ body {
   padding-bottom: 8%;
 }
 
-.learnMorebtn1{
-  background-color: #4268AE;
-  padding: 4px 12px;
-  border-radius: 1px;
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-.learnMorebtn2{
-  background-color: #FFA437;
-  padding: 4px 12px;
-  border-radius: 1px;
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-.learnMorebtn3{
-  background-color: #4268AE;
-  padding: 4px 12px;
-  border-radius: 1px;
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-.learnMorebtn4{
-  background-color: #FFA437;
-  padding: 4px 12px;
-  border-radius: 1px;
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-.learnMorebtn5{
-  background-color: #4268AE;
-  padding: 4px 12px;
-  border-radius: 1px;
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
 
 @media screen and (max-width: 1632px){.prcA{padding: 0 5%;}.prcB{padding: 1% 5%;}}
 @media screen and (max-width: 1632px){.prchsix{padding-left: 5%;}}
@@ -543,9 +546,11 @@ body {
 @media screen and (max-width: 1064px){.PrcB1, .PrcB2 {width: 50%;display: flex; margin-top: 2%;}}
 @media screen and (max-width: 880px){.prcA, .prcB {padding: 1% 0;}.prchsix{padding-left: 1%;}}
 @media screen and (max-width: 556px){.PrcB1, .PrcB2 {width: 90%;display: flex; margin-left: 1%;}.prcB{margin-top: 4%;}}
-@media screen and (max-width: 556px){.prcB{margin-top: 3%;}}
+@media screen and (max-width: 556px){.prcB{margin-top: 3%;}.hfiveprc,.hfiveprc2 {padding: 8px 12px;;}}
 @media screen and (max-width: 462px){.PrcB1, .PrcB2 {width: 100%;}.prcB{margin-top: 4%;}.prcimg{height: 250px;}}
-@media screen and (max-width: 462px){.prcimg{height: 200px;}}
+@media screen and (max-width: 462px){.prcimg{height: 200px;}.prclist,.prclist2 {padding-top: 25%;}}
+@media screen and (max-width: 430px){.prclist,.prclist2 {padding-top: 23%; height: 33vh;}}
+@media screen and (max-width: 375px){.prclist,.prclist2 {padding-top: 22%; height: 33vh;}}
 
 
 .talktous{

@@ -19,6 +19,12 @@ export default function MasterDetail() {
   }, [location.search]);
 
   const options = {
+    'Who is ClearSky': [
+      { 
+        label: 'New Beta Program', 
+        videos: ['https://www.youtube.com/embed/7IICuqSuiow'], 
+      }
+    ],
     'Introductory Module': [
       { 
         label: 'Initial Assessment, New Website, Infrastructure, and Analytics', 

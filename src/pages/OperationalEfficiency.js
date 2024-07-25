@@ -1,11 +1,29 @@
 import './Services.css';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
+Modal.setAppElement('#root');
 
-export default function Checkout(){
-    return(
-   <>
-      <div className="maingrow">
+export default function GrowingRevenues() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
+
+  const openModal = (url) => {
+    console.log('Opening modal with URL:', url);
+    setVideoUrl(url);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log('Closing modal');
+    setModalIsOpen(false);
+    setVideoUrl('');
+  };
+
+  return (
+    <>
+    <div className="maingrow">
         <div className="leftefficiency">
         <h1>Operational Efficiency <br/>
         With ClearSky Software</h1>
@@ -42,11 +60,6 @@ export default function Checkout(){
             <li>Explore opportunities to reduce input costs through negotiation or alternative sourcing.</li>
             </ul>
           </li>
-          <li>Foster Open Communication:
-            <ul>
-            <li>Create a transparent work environment where employees feel empowered to share ideas and concerns.</li>
-            </ul>
-          </li>
           <li>Prioritize Customer Experience:
             <ul>
             <li>Continuously improve customer interactions to maximize satisfaction and loyalty.</li>
@@ -57,11 +70,6 @@ export default function Checkout(){
             <li>Analyze and resolve bottlenecks promptly to maintain smooth operations and avoid profit erosion.</li>
             </ul>
           </li>
-          <li>Invest in Your Workforce:
-            <ul>
-            <li>Cultivate a positive workplace culture and provide ongoing training to enhance employee skills and engagement.</li>
-            </ul>
-          </li>
         </ol>
 
       <h5>Our Approach:</h5>
@@ -69,6 +77,41 @@ export default function Checkout(){
       Let's work together to tailor a strategy that aligns with your specific goals and challenges.</p>
       </div>
 
+
+      {/* --------------------- videos --------------------- */}
+
+      <div className="growVids text-center">
+        <h2 className="htwo">Enhanced Components that will Improve Efficiency</h2>
+        <p>Innovative Approaches to Operation Efficiency</p>
+        <div className="Gvid1">
+          <img src="./images/thumb/6.png" onClick={() => openModal('https://www.youtube.com/embed/2Bn7WZuGMpI')} alt="Video 1" />
+          <img src="./images/thumb/7.png" onClick={() => openModal('https://www.youtube.com/embed/CFnBurkDMJI')} alt="Video 2" />
+          <img src="./images/thumb/8.png" onClick={() => openModal('https://www.youtube.com/embed/sQ-1sEI3x9A')} alt="Video 3" />
+          <img src="./images/thumb/9.png" onClick={() => openModal('https://www.youtube.com/embed/1H2q_K0dIiQ')} alt="Video 4" />
+        </div>
+
+        <Modal 
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Video Modal"
+          className="custom-modal"
+          overlayClassName="custom-overlay"
+        >
+          <button onClick={closeModal} className="close-button">Close</button>
+          <div className="iframe-container">
+            {videoUrl && (
+              <iframe 
+                src={videoUrl} 
+                title="YouTube video player" 
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                onLoad={() => console.log('Iframe loaded with URL:', videoUrl)}
+              ></iframe>
+            )}
+          </div>
+        </Modal>
+      </div>
 
       <div className="banner">
         <div className="bannerdiv">
@@ -82,6 +125,6 @@ export default function Checkout(){
         </div>
       </div>
 
-   </>
- )
+    </>
+  );
 }

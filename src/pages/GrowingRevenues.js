@@ -1,12 +1,29 @@
-import React from "react"
 import './Services.css';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
+Modal.setAppElement('#root');
 
-export default function GrowingRevenues(){
-    return(
-   <>
-      <div className="maingrow">
+export default function GrowingRevenues() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
+
+  const openModal = (url) => {
+    console.log('Opening modal with URL:', url);
+    setVideoUrl(url);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log('Closing modal');
+    setModalIsOpen(false);
+    setVideoUrl('');
+  };
+
+  return (
+    <>
+    <div className="maingrow">
         <div className="leftgrow">
         <h1>Growing Revenues <br/>
         With ClearSky Software</h1>
@@ -46,19 +63,53 @@ export default function GrowingRevenues(){
           <p className="paraAR">Optimizing all of the above steps producing the most efficient journey.</p>
         </div>
       </div>
- 
-      <div className="banner">
-        <div className="bannerdiv">
-        <div className="bann1">
-        <h3>Unlocking Success: <br/> <strong className="banwhite">ClearSky Software Case Studies</strong> </h3>
-        <p>Discover how ClearSky Software transformed businesses through innovative solutions. </p>
-        </div> 
-        <div className="banbtn">
-          <Link className="btnban" as={Link} to="/CaseStudy">Explore the Case Studies</Link>
+
+      <div className="growVids text-center">
+        <h2 className="htwo">Enhanced Components that will Grow Your Sales </h2>
+        <p>Unlocking Potential for Higher Profits: Innovative Approaches to Revenue Generation</p>
+        <div className="Gvid1">
+          <img src="./images/thumb/5.png" onClick={() => openModal('https://www.youtube.com/embed/7u_Mq-2uOEE')} alt="Video 1" />
+          <img src="./images/thumb/2.png" onClick={() => openModal('https://www.youtube.com/embed/XylpPeh5q9E')} alt="Video 2" />
+          <img src="./images/thumb/3.png" onClick={() => openModal('https://www.youtube.com/embed/hP0y1C0NZek')} alt="Video 3" />
+          <img src="./images/thumb/4.png" onClick={() => openModal('https://www.youtube.com/embed/hfLUlRef71s')} alt="Video 4" />
         </div>
-        </div>
+
+        <Modal 
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Video Modal"
+          className="custom-modal"
+          overlayClassName="custom-overlay"
+        >
+          <button onClick={closeModal} className="close-button">Close</button>
+          <div className="iframe-container">
+            {videoUrl && (
+              <iframe 
+                src={videoUrl} 
+                title="YouTube video player" 
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                onLoad={() => console.log('Iframe loaded with URL:', videoUrl)}
+              ></iframe>
+            )}
+          </div>
+        </Modal>
       </div>
 
-   </>
- )
+      <div className="banner">
+      <div className="bannerdiv">
+      <div className="bann1">
+      <h3>Unlocking Success: <br/> <strong className="banwhite">ClearSky Software Case Studies</strong> </h3>
+      <p>Discover how ClearSky Software transformed businesses through innovative solutions. </p>
+      </div> 
+      <div className="banbtn">
+      <Link className="btnban" as={Link} to="/CaseStudy">Explore the Case Studies</Link>
+      </div>
+      </div>
+      </div>
+
+
+    </>
+  );
 }

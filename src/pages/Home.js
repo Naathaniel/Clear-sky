@@ -9,7 +9,7 @@ export default function Home(){
       <div className='fsMain text-center'>
         <div className='conthero'>
         <h1 className='sampsubt'>Growth through Innovation</h1>
-          <p className='samppara'>Achieving 3 Outcomes:Growing Sales - Saving Time - Reduce Expenses</p>
+          <p className='samppara'>Achieving 3 Outcomes: Growing Sales - Saving Time - Reduce Expenses</p>
         </div>
         <div className='contlogo'>
         <img className='imgcont' src='./images/clear.png' height={390}></img>
@@ -76,7 +76,7 @@ export default function Home(){
 
       <div className='addoption'>
         <div className='adoptitle'>
-        <h2 className='htwo'>How to access $2,400 and Transform your business today!</h2>
+        <h2 className='htwo'>How to access $2,400 and Transform your Contracting business today!</h2>
         <p className='para'>The Government of Canada is providing small business grants (For a limited time) to eligible businesses</p>
          </div>
           <div className='adpot'>
@@ -84,7 +84,7 @@ export default function Home(){
             <img className='adopimg' src='/images/adopt.png' height={350}></img>
             </div>
             <div className='adopt1'>
-            <h5 className='hfive'>Manufacturers/Contractors with Sales &gt; $30,000 or 1+ Employee </h5>
+            <h5 className='hfive'>Contractors with Sales &gt; $30,000 or 1+ Employee </h5>
             <div className='bancomp'>
             <h6 className='para'>Do I qualify?</h6>
             <h5 className='hfive'>You Need the following 5 conditions:</h5>
@@ -122,7 +122,7 @@ export default function Home(){
                 <li><strong className='prcbold'>Lifetime Savings: </strong> Get a 50% discount on our annual licensing fee, forever.</li>
                 <li><strong className='prcbold'>Market Dominance: </strong> Secure exclusive rights to use our software in specific markets.</li>
               </ul><div>
-              <Link className='learnMorebtn1' to='/moreinfo?category=Introductory%20Module&option=Initial%20Assessment,%20New%20Website,%20Infrastructure,%20and%20Analytics'>Learn More</Link>
+              <Link className='learnMorebtn1' to='/moreinfo?category=Who%20is%20ClearSky&option=New%20Beta%20Program'>Learn More</Link>
               </div>
               
             </div>
@@ -138,7 +138,7 @@ export default function Home(){
               <div>
               <li>Initial Consultation</li>
               <li>New Website</li>
-              <li>Insfrastructure</li>
+              <li>Infrastructure</li>
               <li>Analytics</li>  
               </div>
               <div className='lmbtn'>
@@ -150,7 +150,7 @@ export default function Home(){
             <h5 className='hfiveprc2'>SUPPORT</h5>
             <div className='prclist2'>
               <div>
-              <li>Social Media Management</li>
+              <li>Social Management</li>
               <li>Local SEO Support</li>
               <li>KPI Reporting</li>
               <li>Customer Engagement</li>
